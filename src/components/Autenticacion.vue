@@ -31,13 +31,13 @@
                 axios.post("https://reserva-hotel.herokuapp.com/user/auth", bodyJson)
                 .then((resultado) => {
                 if(resultado.data.Autenticado){
-                    alert("Existe")
+                    alert("Logeado Correctamente")
                 }else{
-                    alert("No existe")
+                    alert("Contraseña incorrecta")
                 }
                 })
                 .catch((error) => {
-                    alert("ERROR Servidor");
+                    alert("Usuario no existe");
                 });
                 
             }
