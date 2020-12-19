@@ -3,8 +3,10 @@ import vueRouter from 'vue-router'
 import User from './components/User'
 import Tipo_cuenta from './components/Tipo_cuenta'
 import Autenticacion from './components/Autenticacion'
+import Reserva from './components/Reserva'
 
 import App from './App'
+//import { component } from 'vue/types/umd'
 
 const router = new vueRouter({
     mode: 'history',
@@ -30,6 +32,12 @@ const router = new vueRouter({
           path: '/user/auth',
           name: 'autenticar',
           component: Autenticacion
+        },
+
+        {
+          path: '/user/reserva/:username',
+          name: 'mostrar_reserva',
+          component: Reserva
         },
     ]
 

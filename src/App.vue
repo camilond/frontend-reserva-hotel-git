@@ -6,7 +6,8 @@
       <button v-on:click="init"> Inicio </button>
       <button v-on:click="getTipocuenta" v-if="is_auth" > Tipo de cuenta </button>
       <button v-if="is_auth" v-on:click="ventana_auth" > Autenticar </button>
-      <button v-if="is_auth" > Cerrar Sesión </button>
+      <button v-if="is_auth" v-on:click="outreserva" > Mostrar reserva (Nueva!)</button>
+      
       </nav>
     </div> 
 
@@ -57,6 +58,13 @@ export default {
       this.$router.push({ name:"tipo_cuenta",
                           params:{username:username}
                         })
+    }
+  },
+
+  outreserva: function(){
+    if(this.$route.name != "mostrar_reserva"){
+      let username = localStorage.getItem("current_username")
+      this.$router.push({name:"mostrar_reserva", params:{username:username}})
     }
   },
  
