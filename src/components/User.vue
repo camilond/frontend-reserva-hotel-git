@@ -2,7 +2,7 @@
     <div id="User">
         <br><br><br><br><br><br><br><br><br><br><br>
         <h2>Hola <span> {{username}}, </span> ¡Bienvenido!</h2><br>
-        <h3>Añadimos una nueva funcionalidad, ahora puede revisar tus reservas, pruebala!!</h3>
+        <h3>Añadimos una nueva funcionalidad, ahora puedes revisar tus reservas, pruebala!!</h3>
     </div>
 </template>
 
