@@ -1,6 +1,8 @@
 <template>
     <div id="User">
-        <h2>Hola <span> {{username}}, </span> ¡Bienvenido!</h2>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <h2>Hola <span> {{username}}, </span> ¡Bienvenido!</h2><br>
+        <h3>Añadimos una nueva funcionalidad, ahora puede revisar tus reservas, pruebala!!</h3>
     </div>
 </template>
 
@@ -19,7 +21,7 @@
 </script>
 
 <style>
-    #User{
+    #User h2{
         width: 100%;
         height: 100%;
         display: flex;
@@ -32,7 +34,17 @@
         color: #283747;
     }
     #User span{
+        padding: 16px 15px;
         color: crimson;
         font-weight: bold;
+    }
+    #User h3{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        color: #283747;
     }
 </style>
